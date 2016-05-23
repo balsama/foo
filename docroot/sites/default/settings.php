@@ -728,5 +728,5 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'lightning';
-$settings['profile_directories'] = array('df');
+$settings['profile_directories'] = array('profiles/contrib/df');
 $config_directories['sync'] = 'sites/default/files/config_Y-8-kfpP2Ts0_PQb4sL0dFBSuTN5kGh9y85oV7EhqesqEXvXxlznFj5X_3pROWfWXFJ-isvDCA/sync';
