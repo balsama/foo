@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "237682c658d553c3752a4d212eb3f482",
-    "content-hash": "aa20b9c6749fc8ed5dd9bc0a70cb596c",
+    "hash": "ada4e681e0c270e1d901b7b87e972934",
+    "content-hash": "8fba0e5ebdf9ab483062d5e6a85c6cf5",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -783,7 +783,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.1.zip",
-                "reference": null,
+                "reference": "319a5dbcbe91a6acafce84dda11c9024aee6ac33",
                 "shasum": null
             },
             "require": {
@@ -822,7 +822,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.1.zip",
-                "reference": null,
+                "reference": "ac1526df5836a611f04bb421945beddb6306b7f2",
                 "shasum": null
             },
             "require": {
@@ -994,6 +994,11 @@
                 "symfony/css-selector": "~2.8"
             },
             "type": "drupal-core",
+            "extra": {
+                "patches_applied": {
+                    "1356276 - inherited install profiles": "https://www.drupal.org/files/issues/make_inherited_install-1356276-133.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
@@ -1028,7 +1033,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha25.zip",
-                "reference": null,
+                "reference": "3c65d78a2ac14dbd0c54fea979a41ee9575aa188",
                 "shasum": null
             },
             "require": {
@@ -1058,6 +1063,150 @@
             "time": "2016-04-01 20:16:42"
         },
         {
+            "name": "drupal/df",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/df",
+                "reference": "f7379ca6eb9db327de67b234144ef12d1b49d864"
+            },
+            "require": {
+                "drupal/contact": "8.*",
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/df_admin": "self.version",
+                "drupal/df_tools": "self.version",
+                "drupal/df_tools_articles": "self.version",
+                "drupal/df_tools_blocks": "self.version",
+                "drupal/df_tools_config": "self.version",
+                "drupal/df_tools_display": "self.version",
+                "drupal/df_tools_editor": "self.version",
+                "drupal/df_tools_icons": "self.version",
+                "drupal/df_tools_landing": "self.version",
+                "drupal/df_tools_migration": "self.version",
+                "drupal/df_tools_moderation": "self.version",
+                "drupal/df_tools_panelizer": "self.version",
+                "drupal/df_tools_services": "self.version",
+                "drupal/df_tools_slideshow": "self.version",
+                "drupal/df_tools_theme": "self.version",
+                "drupal/df_tools_translation": "self.version",
+                "drupal/df_tools_user": "self.version",
+                "drupal/dfs_base": "self.version",
+                "drupal/dfs_dev": "self.version",
+                "drupal/dfs_tec": "self.version",
+                "drupal/tec": "self.version"
+            },
+            "suggest": {
+                "drupal/addtoany": "Required by drupal/df_tools_articles",
+                "drupal/admin_toolbar": "Required by drupal/df_admin",
+                "drupal/admin_toolbar_tools": "Required by drupal/df_admin",
+                "drupal/basic_auth": "Required by drupal/df_admin, drupal/df_tools_services",
+                "drupal/better_formats": "Required by drupal/df_tools_articles",
+                "drupal/block": "Required by drupal/df_admin",
+                "drupal/block_class": "Required by drupal/df_admin",
+                "drupal/block_content": "Required by drupal/df_admin, drupal/df_tools_translation",
+                "drupal/breakpoint": "Required by drupal/df_admin",
+                "drupal/ckeditor": "Required by drupal/df_admin, drupal/df_tools_editor",
+                "drupal/color": "Required by drupal/df_admin",
+                "drupal/comment": "Required by drupal/df_admin, drupal/df_tools_articles",
+                "drupal/composer_manager": "Required by drupal/df_admin",
+                "drupal/config": "Required by drupal/df_admin",
+                "drupal/config_translation": "Required by drupal/df_tools_translation",
+                "drupal/config_update": "Required by drupal/df_admin",
+                "drupal/contact": "Required by drupal/df_admin",
+                "drupal/content_browser": "Required by drupal/df_admin",
+                "drupal/content_browser_grid": "Required by drupal/df_admin, drupal/df_tools_articles, drupal/df_tools_blocks",
+                "drupal/content_translation": "Required by drupal/df_admin, drupal/df_tools_translation",
+                "drupal/contextual": "Required by drupal/df_admin",
+                "drupal/core": "Required by drupal/df_admin, drupal/df_tools, drupal/df_tools_articles, drupal/df_tools_blocks, drupal/df_tools_config, drupal/df_tools_display, drupal/df_tools_editor, drupal/df_tools_icons, drupal/df_tools_landing, drupal/df_tools_migration, drupal/df_tools_moderation, drupal/df_tools_panelizer, drupal/df_tools_services, drupal/df_tools_slideshow, drupal/df_tools_theme, drupal/df_tools_translation, drupal/df_tools_user, drupal/dfs_dev, drupal/dfs_tec, drupal/dfs_base, drupal/tec",
+                "drupal/datetime": "Required by drupal/df_admin, drupal/df_tools_articles",
+                "drupal/dblog": "Required by drupal/df_admin",
+                "drupal/df_admin": "Required by drupal/df_tools_blocks, drupal/df_tools_landing",
+                "drupal/df_tools_articles": "Required by drupal/df_tools, drupal/df_tools_moderation, drupal/df_tools_translation",
+                "drupal/df_tools_blocks": "Required by drupal/df_tools_articles, drupal/df_tools_translation, drupal/dfs_dev, drupal/dfs_tec",
+                "drupal/df_tools_config": "Required by drupal/df_tools",
+                "drupal/df_tools_display": "Required by drupal/df_tools, drupal/dfs_dev, drupal/dfs_tec",
+                "drupal/df_tools_icons": "Required by drupal/df_tools_blocks",
+                "drupal/df_tools_landing": "Required by drupal/df_tools",
+                "drupal/df_tools_migration": "Required by drupal/df_tools_blocks, drupal/df_tools_slideshow, drupal/df_tools_user, drupal/dfs_tec",
+                "drupal/df_tools_moderation": "Required by drupal/df_tools, drupal/df_tools_user, drupal/dfs_tec",
+                "drupal/df_tools_services": "Required by drupal/dfs_tec",
+                "drupal/df_tools_slideshow": "Required by drupal/dfs_dev, drupal/dfs_tec",
+                "drupal/df_tools_theme": "Required by drupal/df_admin, drupal/df_tools",
+                "drupal/df_tools_translation": "Required by drupal/df_tools, drupal/df_tools_articles, drupal/df_tools_blocks, drupal/df_tools_slideshow, drupal/df_tools_user, drupal/dfs_tec",
+                "drupal/df_tools_user": "Required by drupal/df_tools, drupal/df_tools_moderation, drupal/dfs_tec",
+                "drupal/editor": "Required by drupal/df_admin, drupal/df_tools_editor",
+                "drupal/embed": "Required by drupal/df_admin",
+                "drupal/entity_embed": "Required by drupal/df_admin",
+                "drupal/entity_reference": "Required by drupal/df_admin",
+                "drupal/field": "Required by drupal/df_tools_landing",
+                "drupal/field_group": "Required by drupal/df_admin",
+                "drupal/field_ui": "Required by drupal/df_admin",
+                "drupal/file": "Required by drupal/df_admin",
+                "drupal/file_browser": "Required by drupal/df_admin, drupal/df_tools_articles, drupal/df_tools_blocks, drupal/df_tools_slideshow, drupal/df_tools_theme, drupal/df_tools_user",
+                "drupal/file_entity": "Required by drupal/df_admin",
+                "drupal/geolocation": "Required by drupal/df_tools_blocks",
+                "drupal/geophp": "Required by drupal/df_tools_blocks",
+                "drupal/google_analytics": "Required by drupal/df_admin",
+                "drupal/hal": "Required by drupal/df_tools_services",
+                "drupal/help": "Required by drupal/df_admin, drupal/df_tools_theme",
+                "drupal/history": "Required by drupal/df_admin",
+                "drupal/image": "Required by drupal/df_admin, drupal/df_tools_articles, drupal/df_tools_blocks, drupal/df_tools_slideshow",
+                "drupal/image_widget_crop": "Required by drupal/df_admin",
+                "drupal/import": "Required by drupal/df_admin, drupal/df_tools_migration, drupal/df_tools_user, drupal/dfs_dev, drupal/dfs_tec",
+                "drupal/inline_entity_form": "Required by drupal/df_tools_articles, drupal/df_tools_blocks, drupal/df_tools_slideshow",
+                "drupal/language": "Required by drupal/df_tools_landing",
+                "drupal/libraries": "Required by drupal/df_admin",
+                "drupal/link": "Required by drupal/df_tools_articles, drupal/df_tools_blocks, drupal/df_tools_slideshow",
+                "drupal/lite": "Required by drupal/df_admin",
+                "drupal/menu_link_content": "Required by drupal/df_admin",
+                "drupal/menu_ui": "Required by drupal/df_admin, drupal/df_tools_articles, drupal/df_tools_landing",
+                "drupal/migrate_plus": "Required by drupal/df_admin, drupal/df_tools_migration",
+                "drupal/migrate_tools": "Required by drupal/df_admin",
+                "drupal/node": "Required by drupal/df_admin, drupal/df_tools_articles, drupal/df_tools_blocks, drupal/df_tools_landing, drupal/df_tools_slideshow",
+                "drupal/options": "Required by drupal/df_admin",
+                "drupal/page_manager": "Required by drupal/df_admin, drupal/df_tools_display",
+                "drupal/panelizer": "Required by drupal/df_admin, drupal/df_tools_articles, drupal/df_tools_landing, drupal/df_tools_panelizer",
+                "drupal/panels_ipe": "Required by drupal/df_admin",
+                "drupal/path": "Required by drupal/df_admin, drupal/df_tools_articles, drupal/df_tools_landing",
+                "drupal/pathauto": "Required by drupal/df_admin",
+                "drupal/quickedit": "Required by drupal/df_admin",
+                "drupal/rdf": "Required by drupal/df_admin",
+                "drupal/responsive_image": "Required by drupal/df_tools_blocks",
+                "drupal/rest": "Required by drupal/df_tools_services",
+                "drupal/scenarios": "Required by drupal/df_admin",
+                "drupal/scheduler": "Required by drupal/df_tools_articles, drupal/df_tools_services",
+                "drupal/search": "Required by drupal/df_admin",
+                "drupal/serialization": "Required by drupal/df_tools_services",
+                "drupal/shortcut": "Required by drupal/df_admin, drupal/df_tools_user",
+                "drupal/system": "Required by drupal/df_admin",
+                "drupal/taxonomy": "Required by drupal/df_admin, drupal/df_tools_articles",
+                "drupal/text": "Required by drupal/df_tools_articles, drupal/df_tools_blocks",
+                "drupal/token": "Required by drupal/df_admin",
+                "drupal/toolbar": "Required by drupal/df_admin",
+                "drupal/tour": "Required by drupal/df_admin",
+                "drupal/url_embed": "Required by drupal/df_admin, drupal/df_tools_blocks",
+                "drupal/user": "Required by drupal/df_tools_articles, drupal/df_tools_blocks, drupal/df_tools_landing",
+                "drupal/views_infinite_scroll": "Required by drupal/df_tools_theme",
+                "drupal/views_ui": "Required by drupal/df_admin",
+                "drupal/workbench_moderation": "Required by drupal/df_admin, drupal/df_tools_articles, drupal/df_tools_landing, drupal/df_tools_moderation"
+            },
+            "type": "drupal-profile",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Architects start here.",
+            "homepage": "https://www.drupal.org/project/df",
+            "time": "2016-05-20 20:27:24"
+        },
+        {
             "name": "drupal/embed",
             "version": "8.1.0-rc2",
             "source": {
@@ -1068,7 +1217,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.0-rc2.zip",
-                "reference": null,
+                "reference": "294666ad05ad930003308a5fcd1282cdeb63833a",
                 "shasum": null
             },
             "require": {
@@ -1099,7 +1248,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0-alpha3.zip",
-                "reference": null,
+                "reference": "70a105ae063c54bf59e67f9e41cb9121374acb7c",
                 "shasum": null
             },
             "require": {
@@ -1131,7 +1280,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.0-alpha1.zip",
-                "reference": null,
+                "reference": "a40f556feaf921980f69d9fe4ccbc1ef2e325edb",
                 "shasum": null
             },
             "require": {
@@ -1165,7 +1314,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta3.zip",
-                "reference": null,
+                "reference": "14d66f68c13a0b93134ba15ac2ef641e6799eb1c",
                 "shasum": null
             },
             "require": {
@@ -1204,7 +1353,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-alpha6.zip",
-                "reference": null,
+                "reference": "27af4de9fd961fa6ae1369604d05fec8b06db867",
                 "shasum": null
             },
             "require": {
@@ -1235,7 +1384,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/layout_plugin-8.x-1.0-alpha22.zip",
-                "reference": null,
+                "reference": "90be55a68dd33d3564c26fab77573b62f6cda77e",
                 "shasum": null
             },
             "require": {
@@ -1289,7 +1438,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.00-rc5.zip",
-                "reference": null,
+                "reference": "04f5c05d03dfbb9354f72cf62a98ac2a3275bb74",
                 "shasum": null
             },
             "require": {
@@ -1441,7 +1590,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity-8.x-1.0.zip",
-                "reference": null,
+                "reference": "4b9542b93966c411832eaa1dfd94f84bf3ad7a4a",
                 "shasum": null
             },
             "require": {
@@ -1476,7 +1625,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity_image-8.x-1.0.zip",
-                "reference": null,
+                "reference": "717acca8a2cc7ba6ab76f8a30bc7aa247f542255",
                 "shasum": null
             },
             "require": {
@@ -1508,7 +1657,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity_instagram-8.x-1.0.zip",
-                "reference": null,
+                "reference": "351d484ceff91623d32690cd57358f587c92ab4e",
                 "shasum": null
             },
             "require": {
@@ -1541,7 +1690,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity_twitter-8.x-1.0.zip",
-                "reference": null,
+                "reference": "ef412841b5666e07b09c1c5d3643597f2767aa84",
                 "shasum": null
             },
             "require": {
@@ -1574,7 +1723,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta8.zip",
-                "reference": null,
+                "reference": "6a1b892f9b1f1a3b027dbddca81676e0d69a6ef3",
                 "shasum": null
             },
             "require": {
@@ -1627,7 +1776,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha23.zip",
-                "reference": null,
+                "reference": "fed1710d1b366bb3417b197270c6d73caeae4fa1",
                 "shasum": null
             },
             "require": {
@@ -1673,7 +1822,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-3.0-alpha2.zip",
-                "reference": null,
+                "reference": "75a432927539383b391e6905fb5614cbe85a4b84",
                 "shasum": null
             },
             "require": {
@@ -1711,7 +1860,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/panels-8.x-3.0-beta4.zip",
-                "reference": null,
+                "reference": "a463015692bd82a9446982f9ab044894dfdecdea",
                 "shasum": null
             },
             "require": {
@@ -1756,7 +1905,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-alpha3.zip",
-                "reference": null,
+                "reference": "c4952e15e2906ff2040bc01f5e8f37d23950269e",
                 "shasum": null
             },
             "require": {
@@ -1790,7 +1939,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/scheduled_updates-8.x-1.0-alpha5.zip",
-                "reference": null,
+                "reference": "cdeceb8fd89a3644fb34a8a5bcc194ca7cbd84fe",
                 "shasum": null
             },
             "require": {
@@ -1829,7 +1978,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/services-8.x-4.0-alpha3.zip",
-                "reference": null,
+                "reference": "3272958a223a1d0edb5875cc8378b31bb32b241e",
                 "shasum": null
             },
             "require": {
@@ -1862,7 +2011,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-alpha2.zip",
-                "reference": null,
+                "reference": "918d0d5e8e8ee7f446d3e068cb6aa2d7c61ee625",
                 "shasum": null
             },
             "require": {
@@ -1893,7 +2042,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-1.0-rc8.zip",
-                "reference": null,
+                "reference": "4c01b410084ff35ff3995dba2d3c5dd878544e9e",
                 "shasum": null
             },
             "require": {
@@ -1939,7 +2088,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/workbench_moderation-8.x-1.0.zip",
-                "reference": null,
+                "reference": "0c5527f911bcea52c71b8387b9fcbe9e71bc4332",
                 "shasum": null
             },
             "require": {
@@ -6938,7 +7087,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "cweagans/composer-patches": 20
+        "cweagans/composer-patches": 20,
+        "drupal/df": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
