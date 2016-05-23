@@ -21,12 +21,52 @@
         "drupal-composer/drupal-scaffold": "^1.2",
         "cweagans/composer-patches": "dev-master",
         "drupal/lightning": "8.1.*",
-        "drupal/df": "dev-8.x-1.x"
+        "drupal/df": "dev-8.x-lightning"
     },
     "repositories": [
         {
             "type": "composer",
             "url": "https://packagist.drupal-composer.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/acquia/df"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "mjolnic/fontawesome-iconpicker",
+                "version": "1.2.0",
+                "source": {
+                    "url": "https://github.com/mjolnic/fontawesome-iconpicker",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.5.0",
+                "source": {
+                    "url": "https://github.com/kenwheeler/slick",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "loopindex/ckeditor-track-changes",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/loopindex/ckeditor-track-changes",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
         }
     ],
     "scripts": {
