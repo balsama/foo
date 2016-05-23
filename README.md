@@ -15,19 +15,19 @@ the instructions below for your own project.
 
 ## Setting up your own project
 
-__Create a new project from the Lightning Project__
+__1. Create a new project from the Lightning Project__
 
 ```
 $ composer create-project acquia/lightning-project:^8.1 MY_PROJECT --no-interaction --stability rc
 ```
 
-__Require another profile in addition to lightning - in this example, Demo Framework. From within the MY_PROJECT directory:__
+__2. Require another profile in addition to lightning - in this example, Demo Framework. From within the MY_PROJECT directory:__
 
 ```
 $ composer require drupal/df:dev-8.x-1.x
 ```
 
-__Patch drupal core so that it will scan additional profile directories. In `composer.json`, add the following to the `extra` key:__
+__3. Patch drupal core so that it will scan additional profile directories. In `composer.json`, add the following to the `extra` key:__
 
 ```
 "patches": {
@@ -40,13 +40,15 @@ __Patch drupal core so that it will scan additional profile directories. In `com
 
   _Note: the patch is filed against 8.2.x, but it applies cleanly to 8.1.x and works as expected in my limited testing._
 
-__Add the path to the additional profile to the `profile_directories` key in $settings. In `settings.php`:__
+__4. Add the path to the additional profile to the `profile_directories` key in $settings. In `settings.php`:__
 
       ````$settings['profile_directories'] = ['profiles/contrib/df'];````
 
 _Note: Use the full path to the profile from docroot, not just the name of the directory_
 
-__Install Lightning__
+__5. Install Lightning__
 
-      ````$ drush si lightning````
+```
+$ drush si lightning
+```
  
