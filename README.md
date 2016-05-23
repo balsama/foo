@@ -24,11 +24,24 @@ Framework. From within the MY_PROJECT directory:
 
       ````$ composer require drupal/df:dev-8.x-1.x````
 
+4. Patch drupal core so that it will scan additional profile directories. In
+`composer.json`, add the following to the `extra` key:
+
+    ````"patches": {
+            "drupal/core": {
+                "1356276 - inherited install profiles":
+                "https://www.drupal.org/files/issues/make_inherited_install-1356276-133.patch"
+            }
+      },````
+
+_Note: the patch is filed against 8.2.x, but it applies cleanly to 8.1.x and
+works as expected in my limited testing._
+
 3. Add the path to the additional profile to the `profile_directories` key in $settings. In `settings.php`:
 
       ````$settings['profile_directories'] = ['profiles/contrib/df'];````
 
-_Note that it's the full path to the profile from docroot, not just the name of the directory_
+_Note: Use the full path to the profile from docroot, not just the name of the directory_
 
 4. Install Lightning
 
