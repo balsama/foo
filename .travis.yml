@@ -41,7 +41,7 @@ install:
 
   # Install Lightning.
   - cd docroot
-  - drush site-install lightning -y --account-pass=admin --db-url=mysql://root:@127.0.0.1/lpdf
+  - drush site-install lightning -y --account-pass=admin --db-url=mysql://root:@localhost/lpdf
 
 before_script:
   - drush runserver --default-server=builtin 8080 &>/dev/null &
