@@ -2,10 +2,7 @@ language: php
 cache:
   bundler: true
   apt: true
-  directories:
-  - "$HOME/.composer/cache"
-  - "$HOME/.drush/cache"
-  - "$HOME/.npm"
+
 php:
   - 5.5
 
@@ -41,7 +38,7 @@ install:
 
   # Install Lightning.
   - cd docroot
-  - drush site-install lightning -y --db-url=mysql://root:@localhost/drupal
+  - drush si lightning --db-url=mysql://root:@localhost/drupal -y
 
 before_script:
   - drush runserver --default-server=builtin 8080 &>/dev/null &
