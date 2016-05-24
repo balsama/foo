@@ -10,3 +10,6 @@
 
 # Ignore Composer-managed dependencies.
 vendor/
+
+# Ignore changes to settings.php
+/docroot/sites/default/settings.php
