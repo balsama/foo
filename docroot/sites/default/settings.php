@@ -720,15 +720,3 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 $settings['profile_directories'] = array('profiles/contrib/df');
 
-$databases['default']['default'] = array (
-  'database' => 'lpdf',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => '127.0.01',
-  'port' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['install_profile'] = 'lightning';
-$config_directories['sync'] = 'sites/default/files/config_1rl6eCtKTcUg_jbb4yW-tgRRTfKN0dRxwelfhYUsaw6jkL1OQcGm7opT935o7Ykt6qbxSvSjfw/sync';
