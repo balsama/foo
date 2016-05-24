@@ -717,16 +717,6 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'lpdf',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => '127.0.01',
-  'port' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['install_profile'] = 'lightning';
+
 $settings['profile_directories'] = array('profiles/contrib/df');
-$config_directories['sync'] = 'sites/default/files/config_Y-8-kfpP2Ts0_PQb4sL0dFBSuTN5kGh9y85oV7EhqesqEXvXxlznFj5X_3pROWfWXFJ-isvDCA/sync';
+
