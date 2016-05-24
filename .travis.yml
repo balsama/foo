@@ -43,8 +43,8 @@ install:
 before_script:
   - drush runserver --default-server=builtin 8080 &>/dev/null &
   - phantomjs --webdriver=4444 > /dev/null &
-  - cd profiles/contrib/lightning
-  - sed -i -e 's/..\/..\//..\/..\/..\//g' behat.local.yml
+  - cd ..
+  - bin/behat
 
 script:
   - behat --strict

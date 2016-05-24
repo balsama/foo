@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'vO7rhj8XWp2c1B7rU0zoNLnh2jnI88yYKB5XQejP1GXYQCmyi5jepiTXHaqDwEjXJ8d4x50-wg';
+$settings['hash_salt'] = 'TUKrUCUhEeOnu5SSLqRL_ooBpZMpyNIeSMhmocpGjV72dwNVOnD8wVOPwfk96RHDn_a8aFPENw';
 
 /**
  * Deployment identifier.
@@ -720,3 +720,15 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 $settings['profile_directories'] = array('profiles/contrib/df');
 
+$databases['default']['default'] = array (
+  'database' => 'lpdf',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => '127.0.01',
+  'port' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'lightning';
+$config_directories['sync'] = 'sites/default/files/config_1rl6eCtKTcUg_jbb4yW-tgRRTfKN0dRxwelfhYUsaw6jkL1OQcGm7opT935o7Ykt6qbxSvSjfw/sync';
