@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e72d2637ac2f9b38663479ad13212ff1",
-    "content-hash": "a9a16910f269cc3de8bc13ac9d2241a9",
+    "hash": "c5c07830b145887820bd7fb37d7afae3",
+    "content-hash": "8e425bd16815a84d9a26e35c99d84aaa",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -418,6 +418,33 @@
             "time": "2016-03-30 13:16:03"
         },
         {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
             "name": "cweagans/composer-patches",
             "version": "dev-master",
             "source": {
@@ -538,6 +565,39 @@
                 "outlayer"
             ],
             "time": "2016-04-27 11:39:39"
+        },
+        {
+            "name": "dnoegel/php-xdg-base-dir",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dnoegel/php-xdg-base-dir.git",
+                "reference": "265b8593498b997dc2d31e75b89f053b5cc9621a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dnoegel/php-xdg-base-dir/zipball/265b8593498b997dc2d31e75b89f053b5cc9621a",
+                "reference": "265b8593498b997dc2d31e75b89f053b5cc9621a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "XdgBaseDir\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "implementation of xdg base directory specification for php",
+            "time": "2014-10-24 07:27:01"
         },
         {
             "name": "doctrine/annotations",
@@ -984,6 +1044,45 @@
             "time": "2016-04-13 15:46:44"
         },
         {
+            "name": "drupal/acquia_connector",
+            "version": "8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/acquia_connector",
+                "reference": "319a5dbcbe91a6acafce84dda11c9024aee6ac33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/acquia_search": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/acquia_search",
+                "drupal/search_api_solr": "Required by drupal/acquia_search",
+                "drupal/views": "Required by drupal/acquia_search"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows Drupal to securely communicate with the Acquia Subscription, and checks for updates to Acquia Drupal.",
+            "homepage": "https://www.drupal.org/project/acquia_connector",
+            "time": "2016-04-05 12:20:31"
+        },
+        {
             "name": "drupal/address",
             "version": "dev-8.x-1.x",
             "source": {
@@ -1049,7 +1148,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar.git",
-                "reference": "f8380381183bc76babaec9dfe392511011d54904"
+                "reference": "b33e42a2fb128187806cf7343c295cb94fed43ee"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -1079,7 +1178,7 @@
             ],
             "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
             "homepage": "http://drupal.org/project/admin_toolbar",
-            "time": "2016-05-23 11:35:45"
+            "time": "2016-05-24 06:00:36"
         },
         {
             "name": "drupal/adminimal_theme",
@@ -1570,13 +1669,13 @@
             "version": "dev-8.x-lightning",
             "source": {
                 "type": "git",
-                "url": "https://github.com/acquia/df.git",
-                "reference": "00b8021c5417724fd14b49c41d41b9e49875e53b"
+                "url": "https://github.com/balsama/df.git",
+                "reference": "86efe2522bd8be4dc5b70f58d49e95f63075af96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/df/zipball/00b8021c5417724fd14b49c41d41b9e49875e53b",
-                "reference": "00b8021c5417724fd14b49c41d41b9e49875e53b",
+                "url": "https://api.github.com/repos/balsama/df/zipball/86efe2522bd8be4dc5b70f58d49e95f63075af96",
+                "reference": "86efe2522bd8be4dc5b70f58d49e95f63075af96",
                 "shasum": ""
             },
             "require": {
@@ -1598,6 +1697,7 @@
                 "drupal/core": "8.1.1",
                 "drupal/crop": "8.1.0-alpha2",
                 "drupal/ctools": "8.3.0-alpha25",
+                "drupal/diff": "8.1.0-alpha2",
                 "drupal/dropzonejs": "8.1.0-alpha1",
                 "drupal/embed": "8.1.0-rc2",
                 "drupal/entity_browser": "8.1.x-dev",
@@ -1613,7 +1713,6 @@
                 "drupal/google_analytics": "8.2.0",
                 "drupal/image_widget_crop": "8.1.0",
                 "drupal/import": "8.2.x-dev",
-                "drupal/inline_entity_form": "8.1.x-dev",
                 "drupal/layout_plugin": "8.1.0-alpha22",
                 "drupal/leaflet": "8.1.x-dev",
                 "drupal/libraries": "8.3.x-dev",
@@ -1626,7 +1725,6 @@
                 "drupal/oauth": "8.1.x-dev",
                 "drupal/page_manager": "8.1.0-alpha23",
                 "drupal/panelizer": "8.3.0-alpha2",
-                "drupal/panels": "8.3.x-dev",
                 "drupal/pathauto": "8.1.0-alpha3",
                 "drupal/refreshless": "8.1.0-alpha3",
                 "drupal/restui": "8.1.x-dev",
@@ -1713,10 +1811,41 @@
             ],
             "description": "A framework for demoing enterprise-ready Drupal solutions.",
             "support": {
-                "source": "https://github.com/acquia/df/tree/8.x-lightning",
-                "issues": "https://github.com/acquia/df/issues"
+                "source": "https://github.com/balsama/df/tree/8.x-lightning"
             },
-            "time": "2016-05-23 20:59:30"
+            "time": "2016-05-24 15:11:15"
+        },
+        {
+            "name": "drupal/diff",
+            "version": "8.1.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/diff",
+                "reference": "2216ce763fecb03d441231e1b2b3fdddeb761b53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/diff-8.x-1.x-alpha2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/entity": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Shows differences between content revisions.",
+            "homepage": "https://www.drupal.org/project/diff",
+            "time": "2016-03-07 18:06:34"
         },
         {
             "name": "drupal/dropzonejs",
@@ -1790,12 +1919,44 @@
             "time": "2016-04-14 01:03:52"
         },
         {
+            "name": "drupal/entity",
+            "version": "8.1.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity",
+                "reference": "70a105ae063c54bf59e67f9e41cb9121374acb7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0-alpha3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "~8.1",
+                "drupal/system": ">=8.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
+            "homepage": "http://drupal.org/project/entity",
+            "time": "2016-04-27 08:54:12"
+        },
+        {
             "name": "drupal/entity_browser",
             "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_browser.git",
-                "reference": "c22460474ebd99d6f48f8d9746622c230cc01853"
+                "reference": "3bef66d99aa807ee84d1e3c7b1e6ad6f43a4caad"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -1841,7 +2002,7 @@
             ],
             "description": "Provide a generic entity browser/picker/selector.",
             "homepage": "http://drupal.org/project/entity_browser",
-            "time": "2016-05-20 09:18:08"
+            "time": "2016-05-24 11:16:27"
         },
         {
             "name": "drupal/entity_embed",
@@ -2280,11 +2441,17 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.0-alpha6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/inline_entity_form",
-                "reference": "81fbe89d6822da13c5263f78f5e6042381a6f432"
+                "reference": "27af4de9fd961fa6ae1369604d05fec8b06db867"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-alpha6.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "drupal/core": "8.*"
@@ -2301,7 +2468,7 @@
             ],
             "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities. ",
             "homepage": "https://www.drupal.org/project/inline_entity_form",
-            "time": "2016-05-22 02:59:40"
+            "time": "2016-04-18 21:57:48"
         },
         {
             "name": "drupal/layout_plugin",
@@ -2416,52 +2583,79 @@
         },
         {
             "name": "drupal/lightning",
-            "version": "8.1.0-beta5",
+            "version": "8.1.00-rc5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning.git",
-                "reference": "c85e4d02cce8a606d5df29af2d6b92545d74042e"
+                "reference": "04f5c05d03dfbb9354f72cf62a98ac2a3275bb74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.0-beta5.zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.00-rc5.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
+                "composer/installers": "^1.0",
+                "cweagans/composer-patches": "dev-master",
+                "drupal-composer/drupal-scaffold": "^1.2",
+                "drupal/acquia_connector": "^8.1.1",
                 "drupal/block_content": "8.*",
                 "drupal/breakpoint": "8.*",
                 "drupal/ckeditor": "8.*",
                 "drupal/config": "8.*",
+                "drupal/config_update": "^8.1.1",
                 "drupal/contact": "8.*",
                 "drupal/contextual": "8.*",
-                "drupal/core": "8.*",
+                "drupal/core": "^8.1.0",
+                "drupal/ctools": "8.3.0-alpha25",
                 "drupal/datetime": "8.*",
                 "drupal/dblog": "8.*",
                 "drupal/editor": "8.*",
+                "drupal/embed": "8.1.0-rc2",
+                "drupal/entity": "8.1.0-alpha3",
+                "drupal/entity_embed": "8.1.0-alpha1",
                 "drupal/entity_reference": "8.*",
+                "drupal/features": "^8.3.0",
                 "drupal/field_ui": "8.*",
                 "drupal/file": "8.*",
                 "drupal/help": "8.*",
                 "drupal/history": "8.*",
                 "drupal/image": "8.*",
+                "drupal/inline_entity_form": "8.1.0-alpha6",
+                "drupal/layout_plugin": "8.1.0-alpha22",
+                "drupal/media_entity": "~8.1.0",
+                "drupal/media_entity_image": "~8.1.0",
+                "drupal/media_entity_instagram": "~8.1.0",
+                "drupal/media_entity_twitter": "~8.1.0",
                 "drupal/menu_link_content": "8.*",
                 "drupal/menu_ui": "8.*",
-                "drupal/metatag": "8.*",
+                "drupal/metatag": "^8.1.0",
                 "drupal/node": "8.*",
                 "drupal/options": "8.*",
                 "drupal/page_cache": "8.*",
+                "drupal/page_manager": "8.1.0-alpha23",
+                "drupal/panelizer": "8.3.0-alpha2",
+                "drupal/panels": "8.3.0-beta4",
                 "drupal/path": "8.*",
+                "drupal/pathauto": "^8.1.0",
                 "drupal/quickedit": "8.*",
                 "drupal/rdf": "8.*",
+                "drupal/scheduled_updates": "8.1.0-alpha5",
+                "drupal/services": "8.4.0-alpha3",
                 "drupal/shortcut": "8.*",
                 "drupal/taxonomy": "8.*",
                 "drupal/text": "8.*",
+                "drupal/token": "^8.1.0",
                 "drupal/toolbar": "8.*",
+                "drupal/video_embed_field": "8.1.0-rc8",
                 "drupal/views": "8.*",
-                "drupal/views_ui": "8.*"
+                "drupal/views_ui": "8.*",
+                "drupal/workbench_moderation": "~8.1.0",
+                "drush/drush": "^9.0"
             },
             "replace": {
+                "drupal/lightning_core": "self.version",
                 "drupal/lightning_layout": "self.version",
                 "drupal/lightning_media": "self.version",
                 "drupal/lightning_media_image": "self.version",
@@ -2471,18 +2665,20 @@
                 "drupal/lightning_workflow": "self.version"
             },
             "require-dev": {
+                "behat/behat": "^3.0",
+                "drupal/coder": "8.*",
                 "drupal/drupal-extension": "^3.1",
-                "guzzlehttp/guzzle": "^6.1",
-                "jakoch/phantomjs-installer": "1.9.8"
+                "jakoch/phantomjs-installer": "1.9.8",
+                "phing/phing": "^2.14"
             },
             "suggest": {
-                "drupal/core": "Required by drupal/lightning_layout, drupal/lightning_media, drupal/lightning_media_image, drupal/lightning_media_instagram, drupal/lightning_media_twitter, drupal/lightning_media_video, drupal/lightning_workflow",
+                "drupal/core": "Required by drupal/lightning_core, drupal/lightning_layout, drupal/lightning_media, drupal/lightning_media_image, drupal/lightning_media_instagram, drupal/lightning_media_twitter, drupal/lightning_media_video, drupal/lightning_workflow",
                 "drupal/entity_embed": "Required by drupal/lightning_media",
                 "drupal/image": "Required by drupal/lightning_media, drupal/lightning_media_image, drupal/lightning_media_instagram, drupal/lightning_media_twitter, drupal/lightning_media_video",
                 "drupal/inline_entity_form": "Required by drupal/lightning_workflow",
+                "drupal/lightning_core": "Required by drupal/lightning_layout, drupal/lightning_media, drupal/lightning_workflow",
                 "drupal/lightning_media": "Required by drupal/lightning_media_image, drupal/lightning_media_instagram, drupal/lightning_media_twitter, drupal/lightning_media_video",
                 "drupal/media_entity": "Required by drupal/lightning_media",
-                "drupal/media_entity_embeddable_video": "Required by drupal/lightning_media_video",
                 "drupal/media_entity_image": "Required by drupal/lightning_media_image",
                 "drupal/media_entity_instagram": "Required by drupal/lightning_media_instagram",
                 "drupal/media_entity_twitter": "Required by drupal/lightning_media_twitter",
@@ -2492,10 +2688,39 @@
                 "drupal/scheduled_updates": "Required by drupal/lightning_workflow",
                 "drupal/services": "Required by drupal/lightning_media",
                 "drupal/user": "Required by drupal/lightning_media",
+                "drupal/video_embed_media": "Required by drupal/lightning_media_video",
                 "drupal/workbench_moderation": "Required by drupal/lightning_workflow"
             },
             "type": "drupal-profile",
             "extra": {
+                "installer-paths": {
+                    "docroot/core": [
+                        "drupal/core"
+                    ],
+                    "modules/contrib/{$name}": [
+                        "type:drupal-module"
+                    ]
+                },
+                "patches": {
+                    "drupal/panelizer": {
+                        "Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
+                        "Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
+                    },
+                    "drupal/panels": {
+                        "beta4 to 8eba1a0 - quickedit blocks": "https://www.drupal.org/files/issues/panels--beta4-to-8eba1a0.patch",
+                        "2667754 - Allow other modules to disable the IPE based on custom logic": "https://www.drupal.org/files/issues/2667754-3.patch",
+                        "Bandaid tempstore patch": "https://www.drupal.org/files/issues/bandaid.patch"
+                    },
+                    "drupal/scheduled_updates": {
+                        "2674874 - Issue saving Schedule Update Type form": "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
+                    },
+                    "drupal/workbench_moderation": {
+                        "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch"
+                    },
+                    "drush/drush": {
+                        "Adding composer.json support to make-convert command": "https://github.com/drush-ops/drush/commit/ce82b946d49b09cd33da5ca84feb24a6c35f8f8e.patch"
+                    }
+                },
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
                 }
@@ -2506,7 +2731,7 @@
             ],
             "description": "A fast and feature-rich Drupal distribution.",
             "homepage": "https://www.drupal.org/project/lightning",
-            "time": "2016-03-21 17:43:46"
+            "time": "2016-05-11 15:37:41"
         },
         {
             "name": "drupal/lite",
@@ -2536,6 +2761,139 @@
             "description": "Integrates the lite track changes plugin for CKEditor with Drupal.",
             "homepage": "https://www.drupal.org/project/lite",
             "time": "2016-03-31 19:37:07"
+        },
+        {
+            "name": "drupal/media_entity",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/media_entity.git",
+                "reference": "4b9542b93966c411832eaa1dfd94f84bf3ad7a4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_entity-8.x-1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/entity": ">=8.1.0-alpha3",
+                "drupal/image": "8.*",
+                "drupal/user": "8.*",
+                "drupal/views": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Media entity API.",
+            "homepage": "https://www.drupal.org/project/media_entity",
+            "time": "2016-05-01 15:23:10"
+        },
+        {
+            "name": "drupal/media_entity_image",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/media_entity_image.git",
+                "reference": "717acca8a2cc7ba6ab76f8a30bc7aa247f542255"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_entity_image-8.x-1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/media_entity": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Media entity local images provider.",
+            "homepage": "https://www.drupal.org/project/media_entity_image",
+            "time": "2016-04-20 08:51:19"
+        },
+        {
+            "name": "drupal/media_entity_instagram",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/media_entity_instagram.git",
+                "reference": "351d484ceff91623d32690cd57358f587c92ab4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_entity_instagram-8.x-1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/media_entity": "8.*",
+                "php-instagram-api/php-instagram-api": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Media entity Instagram provider.",
+            "homepage": "https://www.drupal.org/project/media_entity_instagram",
+            "time": "2016-02-10 08:00:41"
+        },
+        {
+            "name": "drupal/media_entity_twitter",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/media_entity_twitter.git",
+                "reference": "ef412841b5666e07b09c1c5d3643597f2767aa84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_entity_twitter-8.x-1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/media_entity": "8.*",
+                "j7mbo/twitter-api-php": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Media entity Twitter provider.",
+            "homepage": "https://www.drupal.org/project/media_entity_twitter",
+            "time": "2016-02-25 16:02:22"
         },
         {
             "name": "drupal/metatag",
@@ -2786,6 +3144,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Rename the core 'Page with blocks' admin_label... | https://www.drupal.org/node/2503947": "https://www.drupal.org/files/issues/page_manager-asort-admin-label-etc-0.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2829,8 +3190,7 @@
                     "dev-8.x-3.x": "8.3.x-dev"
                 },
                 "patches_applied": {
-                    "Generate new UUIDs for displays when switching from default to field storage": "https://www.drupal.org/files/issues/2701349-2.patch",
-                    "Explicitly set the Panels IPE URL root when saving in Panelizer": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
+                    "Explicitly set the Panels IPE URL root when saving in Panelizer | https://www.drupal.org/node/2700597": "https://www.drupal.org/files/issues/panelizer-ipe-url-root-handling.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2843,11 +3203,17 @@
         },
         {
             "name": "drupal/panels",
-            "version": "dev-8.x-3.x",
+            "version": "8.3.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/panels",
-                "reference": "4c4a3a7ef4fcac07c5430ee803e0aa01a1b194c7"
+                "reference": "a463015692bd82a9446982f9ab044894dfdecdea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/panels-8.x-3.0-beta4.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "drupal/core": "8.*",
@@ -2867,32 +3233,17 @@
                     "dev-8.x-3.x": "8.3.x-dev"
                 },
                 "patches_applied": {
-                    "Allow other modules to disable the IPE based on custom logic | https://www.drupal.org/node/2667754": "https://www.drupal.org/files/issues/2667754-3.patch",
-                    "Editing layouts via IPE affects other users... | https://www.drupal.org/node/2701433": "https://www.drupal.org/files/issues/bandaid.patch",
-                    "IPE's cancel button is easy to mistake for a button... | https://www.drupal.org/node/2636490": "https://www.drupal.org/files/issues/panels-ipe-esc-focus-fixes-2636490-9.patch"
+                    "beta4 to 8eba1a0 - quickedit blocks": "https://www.drupal.org/files/issues/panels--beta4-to-8eba1a0.patch",
+                    "Bandaid tempstore patch": "https://www.drupal.org/files/issues/bandaid.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
-            "authors": [
-                {
-                    "name": "Jakob Perry",
-                    "homepage": "https://www.drupal.org/u/japerry"
-                },
-                {
-                    "name": "Samuel Mortenson",
-                    "homepage": "https://www.drupal.org/u/samuel.mortenson"
-                },
-                {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/74958/committers"
-                }
-            ],
             "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled.",
             "homepage": "https://www.drupal.org/project/panels",
-            "time": "2016-05-05 21:10:13"
+            "time": "2016-02-16 20:51:34"
         },
         {
             "name": "drupal/pathauto",
@@ -3074,7 +3425,7 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
-                    "2674874 - Issue saving Schedule Update Type form": "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
+                    "Issue saving Schedule Update Type form | https://www.drupal.org/node/2674874": "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -3123,6 +3474,39 @@
             "description": "Publish and unpublish content on specified dates and time.",
             "homepage": "https://www.drupal.org/project/scheduler",
             "time": "2016-05-17 14:18:45"
+        },
+        {
+            "name": "drupal/services",
+            "version": "8.4.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/services",
+                "reference": "3272958a223a1d0edb5875cc8378b31bb32b241e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/services-8.x-4.0-alpha3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/ctools": "8.*",
+                "drupal/serialization": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-4.x": "8.4.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "A standardized solution of integrating external applications with Drupal.",
+            "homepage": "https://www.drupal.org/project/services",
+            "time": "2016-01-21 16:43:29"
         },
         {
             "name": "drupal/token",
@@ -3188,6 +3572,52 @@
             "time": "2016-04-29 00:01:25"
         },
         {
+            "name": "drupal/video_embed_field",
+            "version": "8.1.0-rc8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/video_embed_field",
+                "reference": "4c01b410084ff35ff3995dba2d3c5dd878544e9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-1.0-rc8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/field": "8.*"
+            },
+            "replace": {
+                "drupal/video_embed_media": "self.version",
+                "drupal/video_embed_wysiwyg": "self.version"
+            },
+            "suggest": {
+                "drupal/ckeditor": "Required by drupal/video_embed_wysiwyg",
+                "drupal/core": "Required by drupal/video_embed_media, drupal/video_embed_wysiwyg",
+                "drupal/field": "Required by drupal/video_embed_wysiwyg",
+                "drupal/media_entity": "Required by drupal/video_embed_media"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "package": "Field types",
+                    "version": "8.x-1.x"
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "A field type for displaying videos from 3rd party providers such as YouTube and Vimeo.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "time": "2016-04-29 11:04:49"
+        },
+        {
             "name": "drupal/views_infinite_scroll",
             "version": "8.1.0",
             "source": {
@@ -3244,7 +3674,8 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
-                    "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch"
+                    "Provide logical access control for when IPE... | https://www.drupal.org/node/2668006": "https://www.drupal.org/files/issues/2668006-2.patch",
+                    "Replace the workbench moderation form with a block | https://www.drupal.org/node/2685163": "https://www.drupal.org/files/issues/2685163-19.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -3300,6 +3731,112 @@
                 "Drupal"
             ],
             "time": "2016-05-02 17:11:51"
+        },
+        {
+            "name": "drush/drush",
+            "version": "9.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drush-ops/drush.git",
+                "reference": "571719f6f9f36d930654ba0cab24215ee0491eb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/571719f6f9f36d930654ba0cab24215ee0491eb4",
+                "reference": "571719f6f9f36d930654ba0cab24215ee0491eb4",
+                "shasum": ""
+            },
+            "require": {
+                "league/container": "~2",
+                "pear/console_table": "~1.3.0",
+                "php": ">=5.4.5",
+                "psr/log": "~1.0",
+                "psy/psysh": "~0.6",
+                "symfony/config": "~2.2",
+                "symfony/var-dumper": "~2.7|~3.0",
+                "symfony/yaml": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "symfony/process": "2.7.*"
+            },
+            "suggest": {
+                "drush/config-extra": "Provides configuration workflow commands, such as config-merge.",
+                "ext-pcntl": "*"
+            },
+            "bin": [
+                "drush",
+                "drush.launcher",
+                "drush.php",
+                "drush.bat",
+                "drush.complete.sh"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.0.x-dev"
+                },
+                "patches_applied": {
+                    "Adding composer.json support to make-convert command": "https://github.com/drush-ops/drush/commit/ce82b946d49b09cd33da5ca84feb24a6c35f8f8e.patch"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Drush": "lib/"
+                },
+                "files": [
+                    "lib/Drush.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com"
+                },
+                {
+                    "name": "Owen Barton",
+                    "email": "drupal@owenbarton.com"
+                },
+                {
+                    "name": "Mark Sonnabaum",
+                    "email": "marksonnabaum@gmail.com"
+                },
+                {
+                    "name": "Antoine Beaupré",
+                    "email": "anarcat@koumbit.org"
+                },
+                {
+                    "name": "Greg Anderson",
+                    "email": "greg.1.anderson@greenknowe.org"
+                },
+                {
+                    "name": "Jonathan Araña Cruz",
+                    "email": "jonhattan@faita.net"
+                },
+                {
+                    "name": "Jonathan Hedstrom",
+                    "email": "jhedstrom@gmail.com"
+                },
+                {
+                    "name": "Christopher Gervais",
+                    "email": "chris@ergonlogic.com"
+                },
+                {
+                    "name": "Dave Reid",
+                    "email": "dave@davereid.net"
+                },
+                {
+                    "name": "Damian Lee",
+                    "email": "damiankloip@googlemail.com"
+                }
+            ],
+            "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
+            "homepage": "http://www.drush.org",
+            "time": "2016-03-09 21:36:58"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -3757,22 +4294,22 @@
         },
         {
             "name": "henrikbjorn/lurker",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/flint/Lurker.git",
-                "reference": "712d3ef19bef161daa2ba0e0237c6b875587a089"
+                "reference": "ab45f9cefe600065cc3137a238217598d3a1d062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flint/Lurker/zipball/712d3ef19bef161daa2ba0e0237c6b875587a089",
-                "reference": "712d3ef19bef161daa2ba0e0237c6b875587a089",
+                "url": "https://api.github.com/repos/flint/Lurker/zipball/ab45f9cefe600065cc3137a238217598d3a1d062",
+                "reference": "ab45f9cefe600065cc3137a238217598d3a1d062",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "symfony/config": "^2.2|^3.0",
-                "symfony/event-dispatcher": "^2.2|^3.0"
+                "symfony/config": "~2.2",
+                "symfony/event-dispatcher": "~2.2"
             },
             "suggest": {
                 "ext-inotify": ">=0.1.6"
@@ -3812,7 +4349,7 @@
                 "resource",
                 "watching"
             ],
-            "time": "2016-03-16 15:22:20"
+            "time": "2015-10-27 09:19:19"
         },
         {
             "name": "igorw/get-in",
@@ -3902,6 +4439,143 @@
             "time": "2014-11-20 16:49:30"
         },
         {
+            "name": "j7mbo/twitter-api-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/J7mbo/twitter-api-php.git",
+                "reference": "a89ce3e294484aad7ae13dbabe45fb3928024ef8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/J7mbo/twitter-api-php/zipball/a89ce3e294484aad7ae13dbabe45fb3928024ef8",
+                "reference": "a89ce3e294484aad7ae13dbabe45fb3928024ef8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5,>=4.5.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "TwitterAPIExchange.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU Public License"
+            ],
+            "authors": [
+                {
+                    "name": "James Mallison",
+                    "homepage": "https://github.com/j7mbo/twitter-api-php"
+                }
+            ],
+            "description": "Simple PHP Wrapper for Twitter API v1.1 calls",
+            "homepage": "https://github.com/j7mbo/twitter-api-php",
+            "keywords": [
+                "api",
+                "php",
+                "twitter"
+            ],
+            "time": "2015-08-03 21:35:18"
+        },
+        {
+            "name": "jakub-onderka/php-console-color",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JakubOnderka/PHP-Console-Color.git",
+                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Color/zipball/e0b393dacf7703fc36a4efc3df1435485197e6c1",
+                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "jakub-onderka/php-code-style": "1.0",
+                "jakub-onderka/php-parallel-lint": "0.*",
+                "jakub-onderka/php-var-dump-check": "0.*",
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JakubOnderka\\PhpConsoleColor": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Onderka",
+                    "email": "jakub.onderka@gmail.com",
+                    "homepage": "http://www.acci.cz"
+                }
+            ],
+            "time": "2014-04-08 15:00:19"
+        },
+        {
+            "name": "jakub-onderka/php-console-highlighter",
+            "version": "v0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JakubOnderka/PHP-Console-Highlighter.git",
+                "reference": "7daa75df45242c8d5b75a22c00a201e7954e4fb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Highlighter/zipball/7daa75df45242c8d5b75a22c00a201e7954e4fb5",
+                "reference": "7daa75df45242c8d5b75a22c00a201e7954e4fb5",
+                "shasum": ""
+            },
+            "require": {
+                "jakub-onderka/php-console-color": "~0.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "jakub-onderka/php-code-style": "~1.0",
+                "jakub-onderka/php-parallel-lint": "~0.5",
+                "jakub-onderka/php-var-dump-check": "~0.1",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JakubOnderka\\PhpConsoleHighlighter": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Onderka",
+                    "email": "acci@acci.cz",
+                    "homepage": "http://www.acci.cz/"
+                }
+            ],
+            "time": "2015-04-20 18:58:01"
+        },
+        {
             "name": "kenwheeler/slick",
             "version": "1.5.0",
             "source": {
@@ -3910,6 +4584,70 @@
                 "reference": "origin/master"
             },
             "type": "library"
+        },
+        {
+            "name": "league/container",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/container.git",
+                "reference": "c0e7d947b690891f700dc4967ead7bdb3d6708c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/container/zipball/c0e7d947b690891f700dc4967ead7bdb3d6708c1",
+                "reference": "c0e7d947b690891f700dc4967ead7bdb3d6708c1",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "php": ">=5.4.0"
+            },
+            "provide": {
+                "container-interop/container-interop-implementation": "^1.1"
+            },
+            "replace": {
+                "orno/di": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev",
+                    "dev-1.x": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Container\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Bennett",
+                    "email": "philipobenito@gmail.com",
+                    "homepage": "http://www.philipobenito.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A fast and intuitive dependency injection container.",
+            "homepage": "https://github.com/thephpleague/container",
+            "keywords": [
+                "container",
+                "dependency",
+                "di",
+                "injection",
+                "league",
+                "provider",
+                "service"
+            ],
+            "time": "2016-03-17 11:07:59"
         },
         {
             "name": "loopindex/ckeditor-track-changes",
@@ -4001,6 +4739,57 @@
                 "reference": "origin/master"
             },
             "type": "library"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2016-04-19 13:41:41"
         },
         {
             "name": "paragonie/random_compat",
@@ -4164,6 +4953,61 @@
             "time": "2015-07-20 20:28:12"
         },
         {
+            "name": "pear/console_table",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Console_Table.git",
+                "reference": "64100b9ee81852f4fa17823e55d0b385a544f976"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Console_Table/zipball/64100b9ee81852f4fa17823e55d0b385a544f976",
+                "reference": "64100b9ee81852f4fa17823e55d0b385a544f976",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "suggest": {
+                "pear/Console_Color2": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Table.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "homepage": "http://pear.php.net/user/yunosh"
+                },
+                {
+                    "name": "Tal Peer",
+                    "homepage": "http://pear.php.net/user/tal"
+                },
+                {
+                    "name": "Xavier Noguer",
+                    "homepage": "http://pear.php.net/user/xnoguer"
+                },
+                {
+                    "name": "Richard Heyes",
+                    "homepage": "http://pear.php.net/user/richard"
+                }
+            ],
+            "description": "Library that makes it easy to build console style tables.",
+            "homepage": "http://pear.php.net/package/Console_Table/",
+            "keywords": [
+                "console"
+            ],
+            "time": "2016-01-21 16:14:31"
+        },
+        {
             "name": "pear/pear-core-minimal",
             "version": "v1.10.1",
             "source": {
@@ -4299,6 +5143,48 @@
             "time": "2016-03-04 05:42:29"
         },
         {
+            "name": "php-instagram-api/php-instagram-api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/galen/PHP-Instagram-API.git",
+                "reference": "7a796fdae715fcdccc00590933ce482437342c35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/galen/PHP-Instagram-API/zipball/7a796fdae715fcdccc00590933ce482437342c35",
+                "reference": "7a796fdae715fcdccc00590933ce482437342c35",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Instagram": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Galen Grover",
+                    "email": "galenjr@gmail.com",
+                    "homepage": "http://www.galengrover.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Instagram API for PHP 5.3+",
+            "homepage": "https://github.com/galen/PHP-Instagram-API",
+            "keywords": [
+                "instagram"
+            ],
+            "time": "2013-11-13 23:10:03"
+        },
+        {
             "name": "psr/http-message",
             "version": "1.0",
             "source": {
@@ -4384,6 +5270,78 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "psy/psysh",
+            "version": "v0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/psysh.git",
+                "reference": "e64e10b20f8d229cac76399e1f3edddb57a0f280"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e64e10b20f8d229cac76399e1f3edddb57a0f280",
+                "reference": "e64e10b20f8d229cac76399e1f3edddb57a0f280",
+                "shasum": ""
+            },
+            "require": {
+                "dnoegel/php-xdg-base-dir": "0.1",
+                "jakub-onderka/php-console-highlighter": "0.3.*",
+                "nikic/php-parser": "^1.2.1|~2.0",
+                "php": ">=5.3.9",
+                "symfony/console": "~2.3.10|^2.4.2|~3.0",
+                "symfony/var-dumper": "~2.7|~3.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "~1.5",
+                "phpunit/phpunit": "~3.7|~4.0|~5.0",
+                "squizlabs/php_codesniffer": "~2.0",
+                "symfony/finder": "~2.1|~3.0"
+            },
+            "suggest": {
+                "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
+                "ext-pdo-sqlite": "The doc command requires SQLite to work.",
+                "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
+                "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history."
+            },
+            "bin": [
+                "bin/psysh"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.8.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Psy/functions.php"
+                ],
+                "psr-4": {
+                    "Psy\\": "src/Psy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "An interactive shell for modern PHP.",
+            "homepage": "http://psysh.org",
+            "keywords": [
+                "REPL",
+                "console",
+                "interactive",
+                "shell"
+            ],
+            "time": "2016-03-09 05:03:14"
         },
         {
             "name": "stack/builder",
@@ -4546,21 +5504,21 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.0.6",
+            "version": "v2.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "24f155da1ff180df8e15e34a8f6e2f8a0eadefa8"
+                "reference": "edbbcf33cffa2a85104fc80de8dc052cc51596bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/24f155da1ff180df8e15e34a8f6e2f8a0eadefa8",
-                "reference": "24f155da1ff180df8e15e34a8f6e2f8a0eadefa8",
+                "url": "https://api.github.com/repos/symfony/config/zipball/edbbcf33cffa2a85104fc80de8dc052cc51596bb",
+                "reference": "edbbcf33cffa2a85104fc80de8dc052cc51596bb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
-                "symfony/filesystem": "~2.8|~3.0"
+                "php": ">=5.3.9",
+                "symfony/filesystem": "~2.3|~3.0.0"
             },
             "suggest": {
                 "symfony/yaml": "To use the yaml reference dumper"
@@ -4568,7 +5526,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -4595,7 +5553,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-20 18:53:54"
+            "time": "2016-04-20 18:52:26"
         },
         {
             "name": "symfony/console",
@@ -5735,6 +6693,69 @@
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
             "time": "2016-04-14 08:48:44"
+        },
+        {
+            "name": "symfony/var-dumper",
+            "version": "v3.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "0e918c269093ba4c77fca14e9424fa74ed16f1a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0e918c269093ba4c77fca14e9424fa74ed16f1a6",
+                "reference": "0e918c269093ba4c77fca14e9424fa74ed16f1a6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "twig/twig": "~1.20|~2.0"
+            },
+            "suggest": {
+                "ext-symfony_debug": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2016-04-25 11:17:47"
         },
         {
             "name": "symfony/yaml",

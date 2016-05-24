@@ -20,7 +20,7 @@
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^1.2",
         "cweagans/composer-patches": "dev-master",
-        "drupal/lightning": "8.1.*",
+        "drupal/lightning": "8.1.00-rc5",
         "drupal/df": "dev-8.x-lightning"
     },
     "repositories": [
@@ -30,7 +30,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/acquia/df"
+            "url": "https://github.com/balsama/df"
         },
         {
             "type": "package",
