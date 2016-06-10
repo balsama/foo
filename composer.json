@@ -21,7 +21,8 @@
         "drupal-composer/drupal-scaffold": "^1.2",
         "cweagans/composer-patches": "dev-master",
         "drupal/lightning": "8.1.00-rc5",
-        "drupal/df": "dev-8.x-lightning"
+        "drupal/df": "dev-8.x-lightning",
+        "acquia/buildstepstutorial": "dev-master#5cbf5cd448b0c83ca4abaf119909a1b5548afba3"
     },
     "repositories": [
         {
@@ -66,6 +67,18 @@
                     "type": "git",
                     "reference": "origin/master"
                 }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+               "name": "acquia/buildstepstutorial",
+               "version": "dev-master",
+               "source": {
+                 "url": "git@github.com:acquia/buildstepstutorial.git",
+                 "type": "git",
+                 "reference": "5cbf5cd448b0c83ca4abaf119909a1b5548afba3"
+               }
             }
         }
     ],
